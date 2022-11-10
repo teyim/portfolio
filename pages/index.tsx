@@ -1,13 +1,14 @@
 import type { NextPage } from 'next';
-import Cell, { cellSize } from '@components/cell';
 import Grid from '@components/grid';
 import Navbar from '@components/global/navbar';
+import Header from '@components/header';
 
 const Home: NextPage = () => {
   return (
-    <section className="font-SG overflow-hidden text-gray-300 ">
+    <section className="font-SG overflow-hidden text-gray-400 ">
       <Grid />
       <Navbar />
+      <Header />
     </section>
   );
 };
