@@ -22,9 +22,9 @@ function Navbar() {
 
         <ul className="hidden w-3/5 md:flex justify-evenly my-auto text-xl text-gray-500 font-bold">
           {routes.map((route) => (
-            <a key={route.path} href="#">
-              <li className="hover:gradient-text">{route.title}</li>
-            </a>
+            <li key={route.title} className="hover:gradient-text">
+              <Link href={route.path}>{route.title}</Link>
+            </li>
           ))}
         </ul>
 
