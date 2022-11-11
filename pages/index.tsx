@@ -5,7 +5,7 @@ import Header from '@components/header';
 
 const Home: NextPage = () => {
   return (
-    <section className="font-SG overflow-hidden text-gray-400 ">
+    <section className="font-SG overflow-hidden text-gray-400 w-screen h-screen ">
       <Grid />
       <Navbar />
       <Header />
