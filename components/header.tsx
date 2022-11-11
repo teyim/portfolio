@@ -25,15 +25,15 @@ function Header() {
             </a>
           ))}
         </div>
-        <Link href="/about">
-          <a>
+        <div className="">
+          <h1>
             {' '}
-            <AiOutlineEye className="w-10 h-10 mx-auto mt-10  " />
-            <h2 className="text-center text-2xl font-semibold hover:gradient-text">
-              Explore
-            </h2>
-          </a>
-        </Link>
+            <AiOutlineEye className="w-10 h-10 mx-auto mt-10" />
+            <button className=" flex text-center text-2xl font-semibold hover:gradient-text mx-auto">
+              <Link href="/about">Explore</Link>
+            </button>
+          </h1>
+        </div>
       </div>
     </section>
   );
