@@ -22,13 +22,13 @@ export default class MyDocument extends Document {
 
     render(): ReactElement {
         return (
-            <Html>
-                <Head></Head>
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
-            </Html>
+          <Html>
+            <Head></Head>
+            <body style={{ backgroundColor: '#111827' }}>
+              <Main />
+              <NextScript />
+            </body>
+          </Html>
         );
     }
 }
