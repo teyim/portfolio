@@ -25,7 +25,7 @@ function Grid() {
 
   return (
     <div
-      className="absolute top-0 left-0 w-screen h-screen grid overflow-hidden -z-10 bg-gray-900"
+      className="absolute top-0 left-0 w-screen h-screen grid overflow-hidden -z-10 "
       style={{ gridTemplateColumns: `repeat(${columns}, 1fr)` }}
     >
       {Array.from({ length: columns * rows }).map((_, i) => (
