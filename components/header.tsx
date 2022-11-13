@@ -9,8 +9,11 @@ function Header() {
         <div className=" text-center gradient-text text-5xl font-bold">
           Howdy!!
         </div>
-        <div className="text-4xl font-lexend  text-center leading-normal my-10">
-          I am <span className="gradient-text font-semibold ">TEYIM ASOBO</span>
+        <div className="text-4xl  text-center leading-normal my-10">
+          I am{' '}
+          <span className="gradient-text font-semibold font-SG">
+            TEYIM ASOBO
+          </span>
           , A passionate Front-end developer based in{' '}
           <span className="gradient-text font-bold ">Cameroon</span>
         </div>
