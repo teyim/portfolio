@@ -5,7 +5,7 @@ type LayoutProps = {
 };
 function Layout({ children }: LayoutProps) {
   return (
-    <section className="text-gray-400 font-SG ">
+    <section className="text-gray-400 font-lexend ">
       <Navbar />
       {children}
     </section>
