@@ -1,34 +1,35 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement } from 'react';
 import Document, {
-    DocumentInitialProps,
-    DocumentContext,
-    Html,
-    Head,
-    Main,
-    NextScript,
-} from "next/document";
+  DocumentInitialProps,
+  DocumentContext,
+  Html,
+  Head,
+  Main,
+  NextScript,
+} from 'next/document';
 
 // NEXT.JS CUSTOM DOCUMENT
 // https://nextjs.org/docs/advanced-features/custom-document
 
 export default class MyDocument extends Document {
-    static async getInitialProps(
-        ctx: DocumentContext
-    ): Promise<DocumentInitialProps> {
-        const initialProps = await Document.getInitialProps(ctx);
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const initialProps = await Document.getInitialProps(ctx);
 
-        return initialProps;
-    }
+    return initialProps;
+  }
 
-    render(): ReactElement {
-        return (
-          <Html>
-            <Head></Head>
-            <body style={{ backgroundColor: '#111827' }}>
-              <Main />
-              <NextScript />
-            </body>
-          </Html>
-        );
-    }
+  render(): ReactElement {
+    return (
+      <Html>
+        <Head></Head>
+        <body style={{ backgroundColor: '#111827' }}>
+          <Main />
+          <NextScript />
+          <div id="modal-root"></div>
+        </body>
+      </Html>
+    );
+  }
 }
