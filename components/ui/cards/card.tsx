@@ -10,7 +10,7 @@ function Card({ desc, img, tags, title, github, link }: Project) {
         alt={title}
         width={400}
         height={200}
-        className="mx-auto z-10"
+        className="mx-auto"
       />
       <div className="my-2 p-4 text-center">
         <h1 className="text-gray-400 text-2xl font-bold font-SG">{title}</h1>
