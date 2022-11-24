@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { HiOutlineArrowLongRight } from 'react-icons/hi2';
 function About() {
   return (
-    <PageStructure heading="About Me" width="w-3/5">
-      <div className="leading-relaxed">
+    <PageStructure heading="About Me" width="md:w-3/5">
+      <div className="leading-relaxed text-center md:text-left">
         <p className="my-5">
           Hi, I am TEYIM ASOBO. A frontend developer from cameroon, and a level
           4 student of the University of Bamenda in Combined Maths and Computer
@@ -21,7 +21,7 @@ function About() {
           sports(football), playing video games or waching movies.
         </p>
       </div>
-      <div className="my-5">
+      <div className="my-5 text-center md:text-left">
         <h1 className="text-gray-400 text-3xl font-bold font-SG">
           Languages and Tools
         </h1>
