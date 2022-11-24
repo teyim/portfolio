@@ -1,22 +1,29 @@
-import { useState } from 'react';
-import { routes } from 'data/global';
+import { useContext } from 'react';
 import Link from 'next/link';
 import { IoMenuOutline } from 'react-icons/io5';
-import { MdClose } from 'react-icons/md';
 import { useRouter } from 'next/router';
+import { routes } from 'data/global';
+import Modal from './modal';
+import { NavbarContext } from 'helpers/context';
+import { AiOutlineClose } from 'react-icons/ai';
 
 function Navbar() {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const navbarContext = useContext(NavbarContext);
 
   const router = useRouter();
   const { route: currentRoute } = router;
 
   const handleToggle = () => {
-    setNavbarOpen((prev) => !prev);
+    navbarContext?.setIsNavbarOpen((prev) => !prev);
+  };
+
+  const handleMobileRoute = (route: string) => {
+    router.push(route);
+    handleToggle();
   };
 
   return (
-    <div className="py-8 px-10 md:px-40 z-100">
+    <div className={`py-8 px-10 md:px-40 z-100`}>
       <div className="flex justify-between">
         <Link href="/" passHref>
           <a className="font-lexend font-semibold text-2xl md:text-3xl gradient-text">
@@ -38,22 +45,24 @@ function Navbar() {
         </ul>
 
         <div className="xs:flex md:hidden">
-          {navbarOpen ? (
-            <MdClose className="w-8 h-8" onClick={handleToggle} />
-          ) : (
-            <IoMenuOutline className="w-8 h-8" onClick={handleToggle} />
-          )}
+          <IoMenuOutline className="w-8 h-8" onClick={handleToggle} />
         </div>
+        <Modal isModalOpen={navbarContext?.isNavbarOpen as boolean}>
+          <ul className="bg-gray-800 w-screen  h-screen left-0  text-3xl text-gray-500 font-bold text-center p-10 top-0 right-0  overflow-hidden fixed">
+            <AiOutlineClose
+              className="w-6 top-3 absolute right-5 text-gray-500 z-100"
+              onClick={handleToggle}
+            />
+            {routes.map((route) => (
+              <li className="hover:gradient-text my-6" key={route.path}>
+                <span onClick={() => handleMobileRoute(route.path)}>
+                  {route.title}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </Modal>
       </div>
-      {navbarOpen && (
-        <ul className="bg-gray-800 w-screen absolute h-screen left-0 mt-10 text-3xl text-gray-500 font-bold text-center p-10">
-          {routes.map((route) => (
-            <a key={route.path} href="#">
-              <li className="hover:gradient-text my-6">{route.title}</li>
-            </a>
-          ))}
-        </ul>
-      )}
     </div>
   );
 }
