@@ -14,7 +14,7 @@ function Layout({ children }: LayoutProps) {
   };
   return (
     <NavbarContext.Provider value={NavbarContextValues}>
-      <section className="text-gray-400 font-lexend ">
+      <section className="text-gray-400 font-lexend overflow-x-hidden ">
         <Navbar />
         {children}
       </section>
