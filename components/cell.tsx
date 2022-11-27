@@ -1,4 +1,4 @@
-export const cellSize = 100;
+export const cellSize = 90;
 
 function Cell() {
   return (
