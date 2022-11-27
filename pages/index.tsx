@@ -4,8 +4,8 @@ import Header from '@components/header';
 
 const Home: NextPage = () => {
   return (
-    <section className="overflow-hidden ">
-      <Grid />
+    <section>
+      {/* <Grid /> */}
       <Header />
     </section>
   );
