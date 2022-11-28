@@ -19,7 +19,7 @@ export const routes: Route[] = [
   },
   {
     title: 'Resume',
-    path: '/resume',
+    path: 'https://drive.google.com/file/d/16lDGPi7B3rfmOtHWkhOZNJlHo-d05TK-/view?usp=sharing',
   },
   {
     title: 'Contact',
