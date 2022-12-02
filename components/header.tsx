@@ -14,8 +14,8 @@ function Header() {
           <span className="gradient-text font-semibold font-SG">
             TEYIM ASOBO
           </span>
-          , A passionate Front-end developer based in{' '}
-          <span className="gradient-text font-bold ">Cameroon</span>
+          , A passionate Front-end developer, who strives in building scalable
+          and reliable web applications with good user interfaces
         </div>
         <div className="flex justify-evenly md:w-3/4 mx-auto text-2xl  p-2 my-10">
           {externalLinks.map((links) => (
