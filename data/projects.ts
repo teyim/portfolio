@@ -45,4 +45,13 @@ export const projects: Project[] = [
     github: 'https://github.com/teyim/Jadoo',
     tags: ['React', 'Redux', 'Tailwind', 'Firebase'],
   },
+  {
+    id: 5,
+    title: 'Portfolio Website',
+    desc: 'My personal portfolio website',
+    img: '/static/projects/portfolio.png',
+    link: 'http://teyim.vercel.app/',
+    github: 'https://github.com/teyim/portfolio',
+    tags: ['Nextjs', 'Tailwind', 'Typescript'],
+  },
 ];
