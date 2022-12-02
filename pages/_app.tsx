@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             'I am A frontend developer from cameroon, and a level 4 student of the University of Bamenda in Combined Maths and Computer Science',
           images: [
             {
-              url: 'https://i.ibb.co/YL3Hm4J/Fire-Shot-Capture-003.png',
+              url: 'https://i.ibb.co/HX8zfRS/portfolio.png',
               width: 800,
               height: 420,
               alt: 'Teyim Asobo',
