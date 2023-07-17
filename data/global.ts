@@ -19,7 +19,7 @@ export const routes: Route[] = [
   },
   {
     title: 'Resume',
-    path: 'https://drive.google.com/file/d/1dokJx20SFTO8aM_kqaZ9ASrbijFaHbxE/view?usp=share_link',
+    path: 'https://drive.google.com/file/d/1IhF3T5TkKuTJQsl161vluOo4-fbps9ax/view',
   },
   {
     title: 'Contact',
@@ -42,6 +42,6 @@ export const externalLinks: externalLink[] = [
   },
   {
     name: 'Blog',
-    link: 'https://dev.to/teyim',
+    link: 'https://teyim.hashnode.dev/',
   },
 ];
