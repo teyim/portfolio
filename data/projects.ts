@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: 0,
     title: 'Uba votes',
     desc: 'An e-voting platform that allows registered university students to take part in school elections',
-    img: '/static/projects/markdown-blog.png',
+    img: '/static/projects/ubavotes.png',
     link: 'https://uba-votes.vercel.app/',
     github: 'https://github.com/teyim/Uba-votes',
     tags: ['Nextjs', 'Tailwind', 'Nodejs', 'TYpescript',"React-query"],
