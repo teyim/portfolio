@@ -17,7 +17,7 @@ function Header() {
           , A passionate Front-end developer, who strives in building scalable
           and reliable web applications with good user interfaces
         </div>
-        <div className="flex justify-evenly md:w-3/4 mx-auto text-2xl  p-2 my-10">
+        <div className="flex justify-evenly md:w-3/4 mx-auto text-2xl  p-2 my-10 flex-wrap">
           {externalLinks.map((links) => (
             <a
               key={links.name}
