@@ -15,9 +15,9 @@ function Card({ desc, img, tags, title, github, link }: Project) {
       <div className="my-2 p-4 text-center">
         <h1 className="text-gray-400 text-2xl font-bold font-SG">{title}</h1>
         <h2 className="text-lg">{desc}</h2>
-        <div className="flex my-3 justify-center">
+        <div className="flex my-3 justify-center flex-wrap">
           {tags.map((tag) => (
-            <h3 key={tag} className="text-gray-400 text-sm font-bold mx-3">
+            <h3 key={tag} className="text-gray-400 text-sm font-bold mx-3 ">
               {tag}
             </h3>
           ))}
