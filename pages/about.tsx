@@ -9,9 +9,11 @@ function About() {
       <PageStructure heading="About Me" width="md:w-3/5">
         <div className="leading-relaxed text-center md:text-left">
           <p className="my-5">
-            Hi, I am TEYIM ASOBO. A frontend developer from cameroon, and a
-            level 4 student of the University of Bamenda in Combined Maths and
-            Computer Science.
+            Hi, I am TEYIM ASOBO. A Frontend developer who combines design flair
+            with technical know-how for seamless user experiences. I excel in
+            teamwork, turning visions into reality. Always learning, I stay
+            updated with industry trends to drive innovation. With a proven
+            track record, I'm ready to enhance your development team.
           </p>
           <p className="my-5">
             I leverage modern tools: frameworks and libraries, to create modern
