@@ -14,8 +14,7 @@ function Header() {
           <span className="gradient-text font-semibold font-SG">
             TEYIM ASOBO
           </span>
-          , A passionate Front-end developer, who strives in building scalable
-          and reliable web applications with good user interfaces
+          , A Frontend developer who combines design flair with technical know-how for seamless user experiences. I excel in teamwork, turning visions into reality. Always learning, I stay updated with industry trends to drive innovation. With a proven track record, I'm ready to enhance your development team.
         </div>
         <div className="flex justify-evenly md:w-3/4 mx-auto text-2xl  p-2 my-10 flex-wrap">
           {externalLinks.map((links) => (
