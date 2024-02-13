@@ -4,7 +4,7 @@ import { AiOutlineEye } from 'react-icons/ai';
 
 function Header() {
   return (
-    <section className="p-5 md:py-10 md:px-6 flex-col ">
+    <section className="p-5 md:py-10 md:px-6 flex-col inset-0 h-full w-full bg-dark bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px];">
       <div className="md:max-w-7xl md:w-3/5 md:mx-auto  md:p-2">
         <div className=" text-center gradient-text text-5xl font-bold">
           Howdy!!
