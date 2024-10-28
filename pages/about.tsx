@@ -1,3 +1,4 @@
+import { skills } from 'constants';
 import PageStructure from 'HOC/pageStructure';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -35,15 +36,11 @@ function About() {
             Here is a list of tools and languagues i have played around with:
           </p>
           <ul className="font-light list-disc px-6">
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Reactjs</li>
-            <li>React Native</li>
-            <li>Git/Github</li>
-            <li>Nodejs</li>
-            <li>MongoDB</li>
-            <li>Firebase</li>
-            <li>Nextjs</li>
+            {skills.map((skill: string, index: number) => (
+              <li key={index} className="my-2">
+                {skill}
+              </li>
+            ))}
           </ul>
         </div>
         <Link href="/projects">
