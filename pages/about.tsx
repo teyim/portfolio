@@ -1,4 +1,4 @@
-import { skills } from 'constants';
+import { skills } from '../constants';
 import PageStructure from 'HOC/pageStructure';
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -14,7 +14,7 @@ function About() {
             with technical know-how for seamless user experiences. I excel in
             teamwork, turning visions into reality. Always learning, I stay
             updated with industry trends to drive innovation. With a proven
-            track record, I'm ready to enhance your development team.
+            track record, I&apos;m ready to enhance your development team.
           </p>
           <p className="my-5">
             I leverage modern tools: frameworks and libraries, to create modern
